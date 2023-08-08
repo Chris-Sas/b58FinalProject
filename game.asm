@@ -1479,6 +1479,13 @@ gameover:
 	sw $t1, 516($t0)
 	sw $t1, 520($t0)
 	sw $t1, 768($t0)
+lost:
+	li $t9, 0xffff0000
+	lw $t8, 0($t9)
+	lw $t1, 4($t9)
+	beq $t1, 112, p
+	beq $t8, 0, lost
+	j lost
 
 finalScene:
 	li $t0, BASE_ADDRESS 
@@ -1596,13 +1603,7 @@ finalScene:
 	sw $t1, 2344($t0)	
 	
 	j EXIT
-lost:
-	li $t9, 0xffff0000
-	lw $t8, 0($t9)
-	lw $t1, 4($t9)
-	beq $t1, 112, p
-	beq $t8, 0, lost
-	j lost
+	
 draw_heart:
 	li $t1, RED
 	sw $t1, 264($t0)
