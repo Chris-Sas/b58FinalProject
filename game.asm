@@ -27,10 +27,11 @@
 # 
 #
 # Link to video demonstration for final submission:
-# - (insert YouTube / MyMedia / other URL here). Make sure we can view it!
+# - https://youtu.be/2xz17oNKD2I
 #
 # Are you OK with us sharing the video with people outside course staff?
-# - yes, and please share this project github link as well!
+# - yes
+# github: https://github.com/Chris-Sas/b58FinalProject
 #
 # Any additional information that the TA needs to know:
 # - (write here, if any)
